@@ -7,8 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "2rem",
+        },
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
