@@ -1,7 +1,8 @@
-import Image from "next/image";
+import {getDictionary} from "@/app/[lang]/dictionaries";
 
-export default function Home() {
-  return (
-   <div>Photo Feed</div>
-  );
+export default async function Home({params: {lang}}) {
+    const dictionary = await getDictionary(lang);
+    return (
+        <div>{dictionary.followers}</div>
+    );
 }
